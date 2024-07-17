@@ -12,7 +12,7 @@
 <body>
     <!-- navbar -->
      <nav class="p-3 flex bg-white justify-between items-center">
-        <a href="#" id="brand" class="flex gap-2 items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
             <img class="object-cover max-w-12 max-h-12" src="assets/asset 0.png" alt="logo">
             <span class="text-lg font-medium font-display">
                 ToDesktop
@@ -25,12 +25,15 @@
             <a href="#" class="font-medium hover:text-primary">Blogs</a>
             <a href="#" class="font-medium hover:text-primary">Login</a>
         </div>
+        <div class="hidden lg:flex flex-1 justify-end">
+            <button class="items-cente flex gap-2 border border-gray-400 px-6 py-2 font-medium rounded-lg hover:border-gray-700 ">
+                <img src="./assets/asset 1.svg" alt="">
+                <span>Electron Developers</span>
+                <i class="fa-solid fa-arrow-right"></i>    
+            </button>
+        </div>
 
-        <button class="hidden items-center lg:flex gap-2 border border-gray-400 px-6 py-2 font-medium rounded-lg hover:border-gray-700">
-            <img src="./assets/asset 1.svg" alt="">
-            <span>Electron Developers</span>
-            <i class="fa-solid fa-arrow-right"></i>    
-        </button>
+        
 
         <button class="p-2 lg:hidden" onclick="handleMenu()">
             <i class="fa-solid fa-bars text-gray-600"></i>
@@ -65,8 +68,40 @@
         </div>
      </nav>
 
-    <!-- hero section -->
-     
+    <!-- Main -->
+     <main>
+        <!-- hero section -->
+         <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to bg-transparent">
+            <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12">
+                <div id="version-test" class="flex items-center my-6 gap-2 border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition group">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
+                    <p class="font-display font-medium text-yellow-600">v0.21.1: <span class="text-yellow-800">Find-in-page bug fixes</span></p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transiton duration-300"></i>
+                </div>
+                <div id="hero-features" class="hidden sm:flex gap-8 my-6">
+                    <div class="flex items-center gap-2 justify-center text-gray-500">
+                        <i class="fa-regular fa-file-code text-sm"></i>
+                        <p>Code Optional</p>
+                    </div>
+                    <div class="flex items-center gap-2 justify-center text-gray-500">
+                        <i class="fa-solid fa-hand-fist"></i>
+                        <p>Drag & drop builder</p>
+                    </div>
+                    <div class="flex items-center gap-2 justify-center text-gray-500">
+                        <i class="fa-solid fa-laptop"></i>
+                        <p>Windows, Mac, Linux</p>
+                    </div>
+                </div>
+                <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-7xl">Web app to desktop app in minutes</h1>
+                <p class="text-xl text-gray-800 mt-4 sm:text-2xl sm:mt-4 sm:leading-normal">Take your wed app codebase and transform it into a cross platform desktop app with native functionality.</p>
+                <div id="button-container" class="mt-12 gap-4 flex flex-col sm:flex-row">
+                    <button class="px-8 py-3 font-semibold rounded-lg bg-primary shadow-sm hover:bg-opacity-90">Download now</button>
+                    <button class="px-8 py-3 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800">Read Docs</button>
+                </div>
+            </div>
+         </div>
+     </main>
+
 </body>
 <script src="script.js"></script>
 </html>
