@@ -463,6 +463,25 @@ html, body {
   overflow-x: hidden;
 }
 
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  max-width: 80rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1024px){
+  .container{
+    margin-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -571,6 +590,40 @@ html, body {
   --tw-contain-style:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 .fixed{
   position: fixed;
 }
@@ -619,6 +672,21 @@ html, body {
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .mb-14{
@@ -798,6 +866,14 @@ html, body {
   gap: 2rem;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
+}
+
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -812,6 +888,10 @@ html, body {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .border{
@@ -942,6 +1022,10 @@ html, body {
 
 .p-\[2px\]{
   padding: 2px;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-3{
