@@ -10,4 +10,7 @@
     h1, h2, h3{
         @apply font-display text-gray-800 font-medium;
     }
+    html, body {
+        overflow-x: hidden;
+      }
 }
