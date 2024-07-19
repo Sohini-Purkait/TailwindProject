@@ -14,7 +14,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="p-3 flex bg-white justify-between items-center">
+    <nav class="p-3 flex bg-white justify-between items-center fixed top-0 left-0 right-0 z-20 shadow-md">
         <a href="#" id="brand" class="flex gap-2 items-center flex-1">
             <img class="object-cover max-w-12 max-h-12" src="assets/asset 0.png" alt="logo">
             <span class="text-lg font-medium font-display">
@@ -73,7 +73,7 @@
     </nav>
 
     <!-- Main -->
-    <main>
+    <main class="mt-16">
         <!-- hero section -->
         <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to bg-transparent">
             <div id="hero-container"
@@ -313,9 +313,9 @@
                 </div>
             </div>
             <!-- step by step -->
-            <div id="steps" class="flex flex-col gap-6 px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32">
+            <div id="steps" class="flex flex-col gap-6 px-6 py-12 max-w-7xl  mx-auto lg:px-8 lg:mt-10 mt-20">
                 <h2 class="text-5xl sm:font-semibold mb-14">How it works</h2>
-                <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+                <div id="step1" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
                     <div class="flex flex-col gap-6 lg:w-1/2">
                         <span
                             class="border border-yellow-300 bg-yellow-50 text-yellow-800 px-3 py-1 w-fit rounded-lg font-medium font-display">Step
@@ -363,7 +363,7 @@
                     </div>
                 </div>
 
-                <div id="step2" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+                <div id="step2" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
                     <div class="flex flex-col gap-6 lg:w-1/2">
                         <span
                             class="border border-yellow-300 bg-yellow-50 text-yellow-800 px-3 py-1 w-fit rounded-lg font-medium font-display">Step
@@ -411,7 +411,7 @@
                     </div>
                 </div>
 
-                <div id="step3" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row">
+                <div id="step3" class="rounded-xl border px-8 py-12 flex flex-col lg:flex-row justify-between">
                     <div class="flex flex-col gap-6 lg:w-1/2">
                         <span
                             class="border border-yellow-300 bg-yellow-50 text-yellow-800 px-3 py-1 w-fit rounded-lg font-medium font-display">Step
@@ -460,7 +460,7 @@
                 </div>
             </div>
             <!-- Bento Grid -->
-            <div id="bento-grid" class="px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32">
+            <div id="bento-grid" class="px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-10">
                 <h2 class="text-5xl sm:font-semibold mb-14 max-w-2xl leading-normal">ToDesktop handles the details</h2>
                 <div id="grid-container" class="flex flex-col gap-6 lg:grid lg:grid-cols-3 "
                     style="grid-auto-rows: 96;">
@@ -930,8 +930,28 @@
                 </div>
              </div>
 
-            <div class="h-[1000px]"></div>
     </main>
+
+    <footer class="container">
+        <div class="rounded-lg border lg:border-none lg:bg-gray-50 bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
+            <a href="#" class="font-light font-display">Documentation</a>
+            <div class="flex gap-8 text-lg">
+                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+                <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo">
+                <span class="text-lg font-medium font-display">ToDesktop</span>
+            </a>
+        </div>
+        <div id="sub-footer" class="flex flex-col gap-6 items-center justify-center my-12">
+            <div class="flex gap-2 items-center ">
+                <img class="w-4 h-4" src="./assets/asset 54.svg" alt="Y-combinator">
+                <p class="text-sm text-gray-600">A Y Combinator company.</p>
+            </div>
+            <p class="text-sm text-gray-400">© 2024 ToDesktop, Inc. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 <script src="script.js"></script>
